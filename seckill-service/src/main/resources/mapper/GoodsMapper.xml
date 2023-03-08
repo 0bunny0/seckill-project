@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.powernode.mapper.GoodsMapper">
+  <resultMap id="BaseResultMap" type="com.powernode.domain.Goods">
+    <!--@mbg.generated-->
+    <!--@Table goods-->
+    <id column="goods_id" jdbcType="INTEGER" property="goodsId" />
+    <result column="goods_name" jdbcType="VARCHAR" property="goodsName" />
+    <result column="price" jdbcType="DECIMAL" property="price" />
+    <result column="content" jdbcType="LONGVARCHAR" property="content" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="total_stocks" jdbcType="INTEGER" property="totalStocks" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="spike" jdbcType="INTEGER" property="spike" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    goods_id, goods_name, price, content, `status`, total_stocks, create_time, update_time, 
+    spike
+  </sql>
+    <update id="updateStock">
+      update goods
+      set total_stocks = total_stocks - 1,update_time = now()
+      where goods_id = #{goodsId}
+      and total_stocks - 1 >= 0
+    </update>
+</mapper>

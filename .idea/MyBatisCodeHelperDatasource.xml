@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MyBatisCodeHelperDatasource">
+    <option name="projectProfile">
+      <ProjectProfile>
+        <option name="generateService" value="true" />
+        <option name="generateServiceInterface" value="true" />
+        <option name="javaMapperPackage" value="com.powernode.mapper" />
+        <option name="javaMapperPath" value="E:\JAVA\code\05-03-seckill-project\seckill-service\src\main\java" />
+        <option name="javaModelPackage" value="com.powernode.domain" />
+        <option name="javaModelPath" value="E:\JAVA\code\05-03-seckill-project\seckill-service\src\main\java" />
+        <option name="lastDatabaseCrudChooseModuleName" value="seckill-web" />
+        <option name="lombokAllArgConstructor" value="true" />
+        <option name="lombokDataAnnotation" value="true" />
+        <option name="lombokNoArgsConstructor" value="true" />
+        <option name="modelAddToString" value="true" />
+        <option name="moduleNameToPackageAndPathMap">
+          <map>
+            <entry key="seckill-web">
+              <value>
+                <UserPackageAndPathInfoByModule>
+                  <option name="javaMapperPackage" value="com.powernode.mapper" />
+                  <option name="javaMapperPath" value="E:\JAVA\code\05-03-seckill-project\seckill-service\src\main\java" />
+                  <option name="javaModelPacakge" value="com.powernode.domain" />
+                  <option name="javaModelPath" value="E:\JAVA\code\05-03-seckill-project\seckill-service\src\main\java" />
+                  <option name="javaServiceInterfacePackage" value="com.powernode.service.impl" />
+                  <option name="javaServiceInterfacePath" value="E:\JAVA\code\05-03-seckill-project\seckill-service\src\main\java" />
+                  <option name="javaServicePackage" value="com.powernode.service" />
+                  <option name="javaServicePath" value="E:\JAVA\code\05-03-seckill-project\seckill-service\src\main\java" />
+                  <option name="xmlPackage" value="mapper" />
+                  <option name="xmlPath" value="E:\JAVA\code\05-03-seckill-project\seckill-service\src\main\resources" />
+                </UserPackageAndPathInfoByModule>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="mybatisPlusIdType" value="AUTO" />
+        <option name="mybatisPlusStaticField" value="false" />
+        <option name="tableGenerateConfigs">
+          <map>
+            <entry key="seckilldb:goods">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="goods_id" />
+                  <option name="javaModelName" value="Goods" />
+                  <option name="moduleName" value="seckill-web" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="seckilldb:order">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="Order" />
+                  <option name="moduleName" value="seckill-web" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="userMybatisPlus" value="true" />
+        <option name="xmlMapperPackage" value="mapper" />
+        <option name="xmlMapperPath" value="E:\JAVA\code\05-03-seckill-project\seckill-service\src\main\resources" />
+      </ProjectProfile>
+    </option>
+  </component>
+</project>

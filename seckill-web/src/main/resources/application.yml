@@ -1,0 +1,16 @@
+server:
+  port: 9090
+spring:
+  application:
+    name: seckill-web
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
+rocketmq:
+  name-server: 192.168.43.130:9876
+  producer:
+    group: seckill-producer-group
+    send-message-timeout: 3000
+    retry-times-when-send-async-failed: 2
+    max-message-size: 4194304
